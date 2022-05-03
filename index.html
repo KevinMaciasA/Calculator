@@ -9,19 +9,26 @@
   <body>
     <main>
       <h1>Geometry calculator</h1>
-      <p>Esta es una calculadora para calcular lo siguiente:</p>
+      <p>Esta es una calculadora que calcula lo siguiente:</p>
       <ul>
         <li>Cuadrado</li>
         <li>Triangulo</li>
         <li>Circulo</li>
       </ul>
-      <h2>Cuadrado</h2>
-      <form action="">
-        <label for="">Escriba el lado del Cuadrado</label>
-        <input type="number" />
-        <button type="button">Calcular perimetro</button>
-        <button type="button">Calcular area</button>
-      </form>
+      <section>
+        <h2>Cuadrado</h2>
+        <form action="">
+          <label for="squareSize">Escriba el lado del Cuadrado:</label>
+          <input type="number" id="squareSize" />
+          <button type="button" onclick="calculateSquarePerimeter()">
+            Calcular perimetro
+          </button>
+          <button type="button" onclick="calculateSquareArea()">
+            Calcular area
+          </button>
+        </form>
+      </section>
     </main>
+    <script src="index.js"></script>
   </body>
 </html>

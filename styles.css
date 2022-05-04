@@ -1,0 +1,8 @@
+.triangle input {
+    display: block;
+    width: 50px;
+}
+
+.triangle button {
+    margin-top: 5px;
+}

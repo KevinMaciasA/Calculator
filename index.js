@@ -20,8 +20,16 @@ function Triangle(sideOne = 1, sideTwo = 2, base = 3, height = 4) {
   this.area = () => (this.base * this.height) / 2;
 }
 
+function Circle(radius = 1) {
+  this.radius = radius;
+
+  this.perimeter = () => 2 * this.radius * Math.PI;
+  this.area = () => this.radius * this.radius * Math.PI;
+}
+
 const square = new Square();
 const tringle = new Triangle();
+const circle = new Circle();
 
 function calculateSquarePerimeter() {
   const input = parseInt(document.getElementById("square-size").value);
@@ -48,4 +56,18 @@ function calculateTriangleArea() {
   tringle.base = base;
   tringle.height = height;
   alert(tringle.area() + " u^2");
+}
+
+function calculateCirclePerimeter() {
+  const radius = document.getElementById("circle-radius").value;
+
+  circle.radius = parseInt(radius);
+  alert(circle.perimeter() + " u");
+}
+
+function calculateCircleArea() {
+  const radius = document.getElementById("circle-radius").value;
+
+  circle.radius = parseInt(radius);
+  alert(circle.area() + " u^2");
 }

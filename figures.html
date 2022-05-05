@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geometry Calculator | Qe/bin</title>
+    <link rel="stylesheet" href="styles/figures.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Geometry calculator</h1>
+      <p>Esta es una calculadora que calcula lo siguiente:</p>
+      <ul>
+        <li>Cuadrado</li>
+        <li>Triangulo</li>
+        <li>Circulo</li>
+      </ul>
+      <section class="square">
+        <h2>Cuadrado</h2>
+        <form action="">
+          <label for="square-size">Escriba el lado del Cuadrado:</label>
+          <input type="number" id="square-size" />
+          <button type="button" onclick="calculateSquarePerimeter()">
+            Calcular perimetro
+          </button>
+          <button type="button" onclick="calculateSquareArea()">
+            Calcular area
+          </button>
+        </form>
+      </section>
+      <section class="triangle">
+        <h2>Triangulo</h2>
+        <form action="">
+          <label for="triangle-base">Escriba la base del Triangulo:</label>
+          <input type="number" id="triangle-base" />
+          <label for="triangle-size-1">Escriba un lado del Triangulo:</label>
+          <input type="number" id="triangle-size-1" />
+          <label for="triangle-size-2"
+            >Escriba el otro lado del Triangulo:</label
+          >
+          <input type="number" id="triangle-size-2" />
+          <label for="triangle-height">Escriba la altura del Triangulo:</label>
+          <input type="number" id="triangle-height" />
+          <button type="button" onclick="calculateTrianglePerimeter()">
+            Calcular perimetro
+          </button>
+          <button type="button" onclick="calculateTriangleArea()">
+            Calcular area
+          </button>
+      <section class="circle">
+        <h2>Circle</h2>
+        <form action="">
+          <label for="circle-radius"> Escriba el radio del circulo: </label>
+          <input type="number" id="circle-radius" />
+          <button type="button" onclick="calculateCirclePerimeter()">
+            Perimetro del circulo
+          </button>
+          <button type="button" onclick="calculateCircleArea()">
+            Area del circulo
+          </button>
+        </form>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

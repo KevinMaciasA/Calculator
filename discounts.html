@@ -1,0 +1,41 @@
+<!DOCTYPE >
+<html lang="es">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Descuentos | Q/bin</title>
+    <link rel="stylesheet" href="styles/discounts.css" />
+  </head>
+  <header>
+    <h1>Porcentajes y descuentos</h1>
+  </header>
+  <body>
+    <main>
+        <section class="calculator__container">
+            <h2>Calculador del precio con descuento</h2>
+            <p id="result"></p>
+            <form action="">
+              <div class="form__price">
+                  <label for="input--price"> Precio del articulo:</label
+                  ><input type="number" id="input--price"/><span> $</span>
+              </div>
+              <div class="form__discount">
+                  <label for="input--discount">Descuento:</label
+                  ><input type="number" id="input--discount" /><span> %</span>
+              </div>
+              <div class="form__cupon">
+                  <label for="input--cupon">Cupon:</label
+                  ><input list="cupons" id="input--cupon" />
+                  <datalist id="cupons">
+                    <option value="KEVIN">10%</option>
+                    <option value="END">15%</option>
+                    <option value="TIERRA">5%</option>
+                  </datalist>
+              </div>
+              <button type="button" id="btn--calculate" onclick="calculateDiscount()">Calcular</button>
+        </section>
+    </main>
+    </form>
+  </body>
+  <script src="js/discounts.js"></script>
+</html>

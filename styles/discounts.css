@@ -1,0 +1,48 @@
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+#btn--calculate {
+    display: block;
+}   
+
+form input {
+    text-align: center;
+    margin-left: 5px;
+    width: 70px;
+}
+
+#result {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+#input--discount {
+    width: 50px;
+}
+
+#input--cupon {
+    width: 75px;
+}
+
+#btn--calculate {
+    margin-left: 34px;
+    margin-top: 10px;
+    border: 1px solid grey;
+    background-color: white;
+}
+
+#btn--calculate:hover {
+    background-color: whitesmoke;
+    border: 1px solid black;
+}
+
+.calculator__container {
+    width: 370px;
+}

@@ -25,6 +25,9 @@ h1 {
 h2 {
     font-size: 1.8rem;
     margin: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: underline;
 }
 
 a {
@@ -45,4 +48,8 @@ figcaption {
 .menu__options a img {
     width: 200px;
     border: 1px solid black;
+}
+
+.separator {
+    width: 30px;
 }

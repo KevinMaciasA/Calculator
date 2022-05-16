@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promedio | Media | Moda</title>
+    <link rel="stylesheet" href="styles/median.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>Promedio, media y moda</h1>
+        <div class="underline"></div>
+        <form class="main__form" action="">
+          <label for="numbers">Escriba el conjunto de numeros aquí:</label>
+          <div class="main__calculator">
+            <input type="text" id="numbers" />
+            <span id="result"></span>
+          </div>
+          <div class="spacer"></div>
+          <div class="form__buttons">
+            <button type="button" onclick="calculateMean()">Promedio</button>
+            <button type="button" onclick="calculateMedian()">Media</button>
+            <button type="button" onclick="calculateMode()">Moda</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+  <script src="js/median.js"></script>
+</html>
